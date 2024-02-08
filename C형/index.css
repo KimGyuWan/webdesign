@@ -12,6 +12,10 @@ a {
   color: #333;
 }
 
+.ccc {
+  background-color: #ccc;
+}
+
 .red {
   background-color: red;
 }
@@ -90,4 +94,38 @@ a:hover {
   background-color: white;
   transform: translate(-50%, -50%);
   z-index: 1000;
+}
+
+#gnb {
+  text-indent: 2rem;
+}
+
+#gnb > li > a{
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2;
+}
+
+#hd {
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+
+#gnb .d2ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#gnb li:hover ul {
+  max-height: 300px;
+}
+
+#gnb > li:hover > a {
+  color: red;
+}
+
+.swiper .swiper-slide img {
+  width: 800px;
+  height: 350px;
 }

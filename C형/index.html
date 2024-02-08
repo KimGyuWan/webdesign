@@ -16,10 +16,10 @@
 
       function anifun() {
         $(".swiper-wapper").animate({
-          "marginLeft": -$(".swiper-slide").width()
+          "marginTop": -$(".swiper").height()
         }, 300, function () {
           $(".swiper-wapper .swiper-slide").eq(0).appendTo($(".swiper-wapper"))
-          $(".swiper-wapper").css("marginLeft", 0)
+          $(".swiper-wapper").css("marginTop", 0)
         })
       }
     })
@@ -72,10 +72,10 @@
 
     <div class="content w800">
       <div class="swiper h350 ofh">
-        <div class="swiper-wapper d-flex">
-          <div class="swiper-slide"><img src="./img/banner1.jpeg" alt="배너"></div>
-          <div class="swiper-slide"><img src="./img/banner2.jpeg" alt="배너"></div>
-          <div class="swiper-slide"><img src="./img/banner3.jpeg" alt="배너"></div>
+        <div class="swiper-wapper">
+          <div class="swiper-slide h350"><img src="./img/banner1.jpeg" alt="배너"></div>
+          <div class="swiper-slide h350"><img src="./img/banner2.jpeg" alt="배너"></div>
+          <div class="swiper-slide h350"><img src="./img/banner3.jpeg" alt="배너"></div>
         </div>
       </div>
 

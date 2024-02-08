@@ -1,0 +1,162 @@
+body *,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.bg-light {
+  background-color: #ccc;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100px;
+}
+
+.h200 {
+height: 200px;
+}
+
+.h300 {
+  height: 300px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.border {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+align-items: end;
+}
+
+.zup {
+  z-index: 100;
+}
+
+
+/* 레이아웃 */
+h1 {
+margin-left: 2rem;
+}
+
+#gnb {
+  margin-right: 2rem;
+}
+
+.before:before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.before:hover:before {
+  height: 150px;
+}
+
+.before:hover .d2ul {
+  display: block;
+}
+
+.d2ul {
+  display: none;
+}
+
+.d1li {
+  width: 100px;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.d1a {
+  font-size: 1.2em;
+  color: black;
+}
+
+.d2li {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d1li:hover {
+  background-color: black;
+}
+
+/* 대메뉴 활성화 소메뉴에 롤오버하더라도 활성화상태유지 */
+.d1li:hover .d1a {
+  color: white;
+}
+
+.d2li:hover {
+  background-color: white;
+}
+
+.d2li:hover .d2a {
+  color: black;
+}
+
+.d2ul {
+  top: 100%;
+}
+
+.d2a {
+  color: white;
+}
